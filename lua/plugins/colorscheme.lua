@@ -1,6 +1,6 @@
 return {
 
-  -- Configure tokyonight
+  -- add tokyonight
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -8,6 +8,17 @@ return {
       style = "moon",
       light_style = "day",
       transparent = true,
+    },
+  },
+
+  -- add gruvbox
+  { "ellisonleao/gruvbox.nvim" },
+
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
     },
   },
 }
